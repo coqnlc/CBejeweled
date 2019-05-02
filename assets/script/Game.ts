@@ -72,14 +72,14 @@ export class Game extends cc.Component {
 
     debugGemList() {
         console.log('缓存数量=' + this.gemPool.size());
-                console.log('当前选择=' + (this.selectedGem1 ? this.selectedGem1.toString() : '') + ',' + (this.selectedGem2 ? this.selectedGem2.toString() : ''));
-                for (let y = MAP_LENGTH - 1; y >= 0; y--) {
-                    let str = '';
-                    for (let x = 0; x < MAP_LENGTH; x++) {
-                        str += this.gemList[x][y];
-                    }
-                    console.log(str);
-                }
+        console.log('当前选择=' + (this.selectedGem1 ? this.selectedGem1.toString() : '') + ',' + (this.selectedGem2 ? this.selectedGem2.toString() : ''));
+        for (let y = MAP_LENGTH - 1; y >= 0; y--) {
+            let str = '';
+            for (let x = 0; x < MAP_LENGTH; x++) {
+                str += this.gemList[x][y];
+            }
+            console.log(str);
+        }
     }
 
     initMap() {
